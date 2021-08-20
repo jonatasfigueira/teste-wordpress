@@ -4,8 +4,6 @@ Este desafio serve para testar os seus conhecimentos em WordPress.
 
 Neste teste existem várias respostas corretas, pois o objetivo é avaliar a sua forma de codificação, e suas habilidades usando as tecnologias descritas abaixo.
 
-Os plugins necessários estão na pasta /wordpress.
-
 ## Requisitos
 - Desenvolva utilizando a última versão do WordPress;
 - Crie seu próprio tema utilizando o Bootstrap 4;
