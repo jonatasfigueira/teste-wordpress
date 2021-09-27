@@ -1,0 +1,41 @@
+#sec-vagaspub {
+    .title-section {
+        padding-top: 60px;
+        @include type-2(36);
+        @include titlesec;
+        color: $green;
+    }
+    .box-vagas {
+        background-color: $gray-light2;
+        @include borda1;
+        a {
+            color: $white;
+        }
+        .info-vagaspub {
+            padding: 30px 20px;
+            span {
+                background-color: $yellow;
+                @include borda1;
+                // color: $white;
+                @include type-3(12);
+                padding: 3px 5px;
+                position: absolute;
+                bottom: 192px;
+                line-height: inherit;
+            }
+            h2 {
+                @include type-3(18);
+            }
+            p {
+                @include type-1(14);
+                line-height: 1.30em;
+            }
+            .btn2 {
+                @include btn-color2;
+                @include transition-1;
+                @include borda1;
+                @include type-3(12);
+            }
+        }
+    }
+}

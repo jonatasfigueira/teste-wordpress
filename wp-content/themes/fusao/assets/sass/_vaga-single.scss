@@ -1,0 +1,62 @@
+#singlevaga {
+    background-color: $white;
+    // margin-top: 60px;
+    margin-bottom: 60px;
+    a {
+        color: $white;
+    }
+    p {
+        text-align: justify;
+    }
+    .form-vaga {
+        margin-top: 40px;
+        h2 {
+            color: $green;
+            margin-bottom: 20px;
+        }
+        form {
+            // width: 100%;
+            input[type="text"] {
+                width: 100%;
+                border: 2px solid $green;
+                border-radius: 5px;
+                background-color: $gray-light2;
+                padding: 10px;
+            }
+            input[type="email"] {
+                width: 100%;
+                border: 2px solid $green;
+                border-radius: 5px;
+                background-color: $gray-light2;
+                padding: 10px;
+            }
+            input[type="tel"] {
+                width: 100%;
+                border: 2px solid $green;
+                border-radius: 5px;
+                background-color: $gray-light2;
+                padding: 10px;
+            }
+            input[type="url"] {
+                width: 100%;
+                border: 2px solid $green;
+                border-radius: 5px;
+                background-color: $gray-light2;
+                padding: 10px;
+            }
+            textarea {
+                width: 340px;
+                border: 2px solid $green;
+                border-radius: 5px;
+                border-radius: 5px;
+                background-color: $gray-light2;
+            }
+            @include transition-1;
+            input[type="submit"] {
+                background: $white;
+                @include btn-color;
+                @include transition-1;
+            }
+        }
+    }
+}

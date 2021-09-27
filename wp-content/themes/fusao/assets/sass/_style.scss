@@ -1,0 +1,26 @@
+/*!
+Theme Name: Imip Intranet
+Theme URI: www.imip.com.br
+Author: Jonatas Figueira
+Author URI: 
+Description: Criado para empresa do tema.
+Version: 2.0
+*/
+
+// Reset & Grid
+// @import 'reset';
+// @import 'grid';
+@import '_fonts.scss';
+@import '_variables-mixins.scss';
+// Global
+@import '_global';
+// Modules
+@import '_search.scss';
+@import '_header.scss';
+@import '_slide.scss';
+@import '_sec-contrata.scss';
+@import '_sec-todasvagas.scss';
+@import '_sec-blog.scss';
+@import '_sec-vagaspub.scss';
+@import '_footer.scss';
+// Pages

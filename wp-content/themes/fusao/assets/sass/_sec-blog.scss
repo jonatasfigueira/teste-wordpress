@@ -1,0 +1,38 @@
+#sec-blog {
+    background-color: $gray-light2;
+    // margin-bottom: 60px;
+    .title-section {
+        padding-top: 60px;
+        @include type-2(36);
+        @include titlesec;
+        color: $green;
+    }
+    .info-blog {
+        h2 {
+            @include type-3(18);
+        }
+        p {
+            @include type-1(14);
+            line-height: 1.30em;
+        }
+        .post-categories {
+            li {
+                list-style: none;
+                @include type-3(16);
+                text-transform: uppercase;
+                text-decoration: none;
+                a {
+                    color: $gray-shadow;
+                    &:hover {
+                        color: $black
+                    }
+                }
+            }
+        }
+    }
+    .btn1 {
+        @include btn-color;
+        @include transition-1;
+        @include borda1;
+    }
+}

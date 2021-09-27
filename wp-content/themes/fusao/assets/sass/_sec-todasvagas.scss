@@ -1,0 +1,20 @@
+#sec-todasvagas {
+    .info-vagas {
+        // padding: 100px 0;
+        h2 {
+            margin-bottom: 30px;
+            @include type-3(36);
+            // width: 500px;
+        }
+        p {
+            margin-bottom: 90px;
+            @include type-1(14);
+            line-height: 1.30em;
+        }
+        .btn1 {
+            @include btn-color;
+            @include transition-1;
+            @include borda1;
+        }
+    }
+}

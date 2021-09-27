@@ -1,0 +1,45 @@
+.container-fluid {
+    padding: 0;
+}
+
+#main-slider {
+    // .carousel-inner {
+    //     // .carousel-item {
+    //     //     height: 90vh;
+    //     // }
+    // }
+    .carousel-item {
+        img {
+            height: 32rem;
+        }
+        .carousel-caption {
+            text-align: center;
+            top: 30%;
+            p {
+                color: $white;
+                width: 300px;
+                margin: 0 auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            h2 {
+                @include type-2(32);
+                line-height: 1em;
+                color: $white;
+                // width: 450px;
+                // margin: 0 auto;
+            }
+            .main-btn {
+                @include btn-white;
+                @include transition-1;
+                @include borda1;
+                margin-top: 60px;
+            }
+        }
+    }
+    .carousel-indicators {
+        .active {
+            background-color: $green;
+        }
+    }
+}

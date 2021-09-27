@@ -1,0 +1,125 @@
+body {
+    background: $white;
+    color: $black;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+// img {
+//     display: block;
+//     max-width: 100%; //deixa qualquer imagem responsiva
+// }
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p,
+li {
+    color: $black;
+}
+
+.paginacao {
+    margin: 0 auto;
+    text-align: center;
+    .page-numbers {
+        display: inline-block;
+        li {
+            @include type-1(16);
+            @include transition-1;
+            display: inline-block;
+            text-align: center;
+            .prev {
+                border: none;
+                color: $green;
+                border-radius: 0;
+                background: transparent;
+                color: $green;
+                &:hover {
+                    color: $yellow;
+                    background: transparent;
+                }
+            }
+            .next {
+                border: none;
+                color: $green;
+                border-radius: 0;
+                background: transparent;
+                color: $green;
+                &:hover {
+                    color: $yellow;
+                    background: transparent;
+                }
+            }
+            a {
+                border: 1px solid $green;
+                text-align: center;
+                border-radius: 50%;
+                color: $green;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                text-decoration: none;
+                &:hover {
+                    color: $white;
+                    background: $green;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    text-decoration: none;
+                }
+            }
+            &:hover {
+                color: $green;
+                @include transition-1;
+            }
+        }
+        .current {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: $white;
+            background: $green;
+        }
+    }
+}
+
+.intro-search {
+    background: url(" images/search.jpg") no-repeat center;
+    background-size: cover;
+    @include type-3(36);
+    text-align: center;
+    color: $white;
+    margin-top: 80px;
+    height: 300px;
+    padding-top: 10%;
+}
+
+.intro-cat-post {
+    background: url("images/blog-cat.jpg") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    a {
+        color: $white;
+    }
+}
+
+.intro-vaga {
+    background: url("images/intro-vaga.jpg") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    a {
+        color: $white;
+    }
+}

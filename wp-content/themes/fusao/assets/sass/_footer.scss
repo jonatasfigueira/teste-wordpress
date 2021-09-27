@@ -1,0 +1,38 @@
+footer {
+    background-color: $gray-light2;
+    a {
+        color: $green;
+        @include transition-1;
+        &:hover {
+            @include transition-1;
+            color: $gray-shadow;
+            text-decoration: none;
+        }
+    }
+    p {
+        @include type-2(16);
+        margin-top: 20px;
+        line-height: 1.75em;
+    }
+    h2 {
+        @include type-3(18);
+        color: $gray-shadow;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            @include type-3(16);
+            list-style: none;
+            line-height: 1.75em;
+        }
+    }
+    .copyright {
+        background-color: $gray-light;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
+        @include type-2(12);
+    }
+}

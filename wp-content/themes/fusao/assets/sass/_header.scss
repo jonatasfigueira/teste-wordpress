@@ -1,0 +1,89 @@
+.navbar {
+    background-color: $white;
+    // text-align: center;
+    height: 80px;
+    #navbar-links {
+        a {
+            bottom: 30px;
+            transform: translateX(-50%);
+            // margin: 0 30px; REMOVER PARA FUNCIONAR NO WP
+            color: $green;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 2px;
+                background: $yellow;
+                border-radius: 5px;
+                bottom: -5px;
+                transform-origin: bottom right;
+                transform: scaleX(0);
+                transition: transform .3s ease;
+            }
+            &:hover {
+                &:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+            &:active {
+                &:after {
+                    width: 100%;
+                    height: 2px;
+                    background: $yellow;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .navbar-nav {
+            margin: 0 auto;
+            text-align: center;
+            // REMOVER BULLLETS NAV WP
+            list-style: none;
+            ul {
+                list-style: none;
+                float: left;
+                margin: 0;
+                li {
+                    float: left;
+                    margin: 0 30px;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// animation title
+.title-animation {
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    color: $white;
+    &::after {
+        content: '|';
+        opacity: 1;
+        margin-left: 5px;
+        display: inline-block;
+        animation: blink .7s infinite;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
